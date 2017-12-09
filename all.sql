@@ -27,7 +27,7 @@ INSERT INTO software(name, category, method) VALUES ('java', 'programming', 'cas
 INSERT INTO software(name, category, method) VALUES ('keepassx', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('libreoffice', 'office', 'cask');
 INSERT INTO software(name, category, method) VALUES ('libreoffice-language-pack', 'office', 'cask');
-INSERT INTO software(name, category, method) VALUES ('mas', 'core', 'cask');
+INSERT INTO software(name, category, method) VALUES ('mas', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('microsoft-office', 'office', 'cask');
 INSERT INTO software(name, category, method) VALUES ('neovim', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('nextcloud', 'core', 'cask');
