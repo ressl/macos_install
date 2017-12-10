@@ -21,7 +21,7 @@ class MacosFirstInstall
   end
 
   def preinstall
-    @pretap = @core.each.map { |package| 'brew tap ' + package['name'] }
+    @pretap = @tap.each.map { |package| 'brew tap ' + package['name'] }
     @precore = @core.each.map { |package| 'brew install ' + package['name'] }
     @precask = @cask.each.map { |package| 'brew cask install ' + package['name'] }
     @premas = @mas.each.map { |package| 'mas install ' + package['name'] }
