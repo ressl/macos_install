@@ -44,6 +44,7 @@ INSERT INTO software(name, category, method) VALUES ('skype-for-business', 'comm
 INSERT INTO software(name, category, method) VALUES ('slack', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('snagit', 'support', 'cask');
 INSERT INTO software(name, category, method) VALUES ('sonos', 'multimedia', 'cask');
+INSERT INTO software(name, category, method) VALUES ('i1profiler', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('teamviewer', 'support', 'cask');
 INSERT INTO software(name, category, method) VALUES ('tmux', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('torbrowser', 'browser', 'cask');

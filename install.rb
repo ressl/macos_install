@@ -6,6 +6,7 @@ class MacosFirstInstall
   def dbconnect
     @db = SQLite3::Database.open 'software.db'
     @db.results_as_hash = true
+    @tap = @db.execute("select * from software WHERE method='tap'")
     @core = @db.execute("select * from software WHERE method='core'")
     @cask = @db.execute("select * from software WHERE method='cask'")
     @mas = @db.execute("select * from software WHERE method='mas'")
@@ -16,9 +17,11 @@ class MacosFirstInstall
     # brewscript = open(url).read
     # eval(brewscript)
     system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
+    @pretap.each { |command| system command }
   end
 
   def preinstall
+    @pretap = @core.each.map { |package| 'brew tap ' + package['name'] }
     @precore = @core.each.map { |package| 'brew install ' + package['name'] }
     @precask = @cask.each.map { |package| 'brew cask install ' + package['name'] }
     @premas = @mas.each.map { |package| 'mas install ' + package['name'] }
@@ -38,9 +41,9 @@ class MacosFirstInstall
   end
 
   def main
-    brewinstall
     dbconnect
     preinstall
+    brewinstall
     install
     cleanup
   end
