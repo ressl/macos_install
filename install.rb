@@ -4,12 +4,14 @@ require 'sqlite3'
 # For installing and configure macOS systems
 class MacosFirstInstall
   def dbconnect
-    @db = SQLite3::Database.open 'software.db'
+    @db = SQLite3::Database.open 'macos_install.db'
     @db.results_as_hash = true
     @tap = @db.execute("select * from software WHERE method='tap'")
     @core = @db.execute("select * from software WHERE method='core'")
     @cask = @db.execute("select * from software WHERE method='cask'")
     @mas = @db.execute("select * from software WHERE method='mas'")
+    @defaults = @db.execute("select * from config WHERE method='defaults'")
+    @systemsetup = @db.execute("select * from config WHERE method='systemsetup'")
   end
 
   def brewinstall
@@ -19,12 +21,22 @@ class MacosFirstInstall
     system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
     @pretap.each { |command| system command }
   end
+  
+  def preconfig
+    @predefaults = @defaults.each.map { |config| [ config['method'], 'write', config['domain'], config['key'], '-' + config['keytyp'], config['keyvalue']].join(' ') }
+    @presystemsetup = @systemsetup.each.map { |config| [ config['method'], '-' + config['key'], config['keyvalue']].join(' ') }
+  end
 
   def preinstall
     @pretap = @tap.each.map { |package| 'brew tap ' + package['name'] }
     @precore = @core.each.map { |package| 'brew install ' + package['name'] }
     @precask = @cask.each.map { |package| 'brew cask install ' + package['name'] }
     @premas = @mas.each.map { |package| 'mas install ' + package['name'] }
+  end
+
+  def config
+    @predefaults.each { |command| system command }
+    @presystemsetup.each { |command| system command }
   end
 
   def install
@@ -42,9 +54,11 @@ class MacosFirstInstall
 
   def main
     dbconnect
+    preconfig
     preinstall
     brewinstall
     install
+    config
     cleanup
   end
 end
