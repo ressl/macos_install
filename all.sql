@@ -44,14 +44,14 @@ INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'safari', 'com.apple.Safari', 'IncludeInternalDebugMenu', 'bool', 'true', 'Enable Safari’s debug menu.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.menuextra.battery', 'ShowPercent', 'string', 'YES', 'Show percentage battery info.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.LaunchServices', 'LSQuarantine', 'bool', 'false', 'Disable the “Are you sure you want to open this application?” dialog.');
-INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'KeyRepeat', 'int', '0', 'The keyboard react faster to keystrokes.');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'KeyRepeat', 'int', '1', 'The keyboard react faster to keystrokes.');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'InitialKeyRepeat', 'int', '10', 'The keyboard react faster to keystrokes.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.SoftwareUpdate', 'AutomaticDownload', 'bool', 'false', 'Disable autoamtic download from updates.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.SoftwareUpdate', 'AutomaticDownload', 'bool', 'false', 'Disable autoamtic download from updates.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.driver.AppleBluetoothMultitouch.trackpad', 'Clicking', 'bool', 'true', 'Trackpad: enable tap to click for this user and for the login screen.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'com.apple.mouse.tapBehavior', 'int', '1', 'Trackpad: enable tap to click for this user and for the login screen.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.BezelServices', 'kDim', 'bool', 'true', 'Automatically illuminate built-in MacBook keyboard in low light.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.BezelServices', 'kDimTime', 'int', '300', 'Turn off keyboard illumination when computer is not used for 5 minutes.');
-INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.BluetoothAudioAgent', 'Apple Bitpool Min (editable)', 'int', '40', 'Increase sound quality for Bluetooth headphones/headsets.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'AppleKeyboardUIMode', 'int', '3', 'Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs).');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'AppleFontSmoothing', 'int', '2', 'Enable subpixel font rendering on non-Apple LCDs.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.screencapture', 'disable-shadow', 'bool', 'true', 'Disable shadow in screenshots.');
@@ -94,7 +94,8 @@ INSERT INTO software(name, category, method) VALUES ('microsoft-office', 'office
 INSERT INTO software(name, category, method) VALUES ('neovim', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('macvim', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('nextcloud', 'core', 'cask');
-INSERT INTO software(name, category, method) VALUES ('nmap', 'core', 'core');
+INSERT INTO software(name, category, method) VALUES ('nmap', 'security', 'core');
+INSERT INTO software(name, category, method) VALUES ('hping', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('node', 'programming', 'core');
 INSERT INTO software(name, category, method) VALUES ('omnifocus', 'office', 'cask');
 INSERT INTO software(name, category, method) VALUES ('omnigraffle', 'office', 'cask');
@@ -107,6 +108,8 @@ INSERT INTO software(name, category, method) VALUES ('skype', 'communication', '
 INSERT INTO software(name, category, method) VALUES ('skype-for-business', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('slack', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('vagrant', 'dev', 'cask');
+INSERT INTO software(name, category, method) VALUES ('chefdk', 'dev', 'cask');
+INSERT INTO software(name, category, method) VALUES ('testssl', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('virtualbox', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('vmware-fusion', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('snagit', 'support', 'cask');
