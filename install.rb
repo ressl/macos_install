@@ -11,21 +11,7 @@ class MacosFirstInstall
     @core = @db.execute("select * from software WHERE method='core'")
     @cask = @db.execute("select * from software WHERE method='cask'")
     @mas = @db.execute("select * from software WHERE method='mas'")
-    @defaults = @db.execute("select * from config WHERE method='defaults'")
-    @systemsetup = @db.execute("select * from config WHERE method='systemsetup'")
-  end
-
-  def brewinstall
-    # url = 'https://raw.githubusercontent.com/Homebrew/install/master/install'
-    # brewscript = open(url).read
-    # eval(brewscript)
-    system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"') unless find_executable('brew')
-    @pretap.each { |command| system command }
-  end
-
-  def preconfig
-    @predefaults = @defaults.each.map { |config| [config['method'], 'write', config['domain'], config['key'], '-' + config['keytyp'], config['keyvalue']].join(' ') }
-    @presystemsetup = @systemsetup.each.map { |config| [config['method'], '-' + config['key'], config['keyvalue']].join(' ') }
+    @gem = @db.execute("select * from software WHERE method='gem'")
   end
 
   def preinstall
@@ -33,17 +19,14 @@ class MacosFirstInstall
     @precore = @core.each.map { |package| 'brew install ' + package['name'] unless system('brew ls --versions ' + package['name']) }
     @precask = @cask.each.map { |package| 'brew cask install ' + package['name'] unless system('brew cask ls --versions ' + package['name']) }
     @premas = @mas.each.map { |package| 'mas install ' + package['name'] }
-  end
-
-  def config
-    @predefaults.each { |command| system command }
-    @presystemsetup.each { |command| system command }
+    @pregem = @gem.each.map { |package| 'gem install ' + package['name'] }
   end
 
   def install
     @precore.compact.each { |command| system command }
     @precask.compact.each { |command| system command }
     @premas.compact.each { |command| system command }
+    @pregem.compact.each { |command| system command }
     system('curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh')
     system('git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions')
     system('curl -L https://iterm2.com/misc/install_shell_integration.sh | bash')
@@ -55,13 +38,37 @@ class MacosFirstInstall
 
   def main
     dbconnect
-    preconfig
     preinstall
     brewinstall
     install
-    config
     cleanup
   end
 end
 
+class MacOSConfig
+  def dbconnect
+    @db = SQLite3::Database.open 'macos_install.db'
+    @db.results_as_hash = true
+    @defaults = @db.execute("select * from config WHERE method='defaults'")
+    @systemsetup = @db.execute("select * from config WHERE method='systemsetup'")
+  end
+
+  def preconfig
+    @predefaults = @defaults.each.map { |config| [config['method'], 'write', config['domain'], config['key'], '-' + config['keytyp'], config['keyvalue']].join(' ') }
+    @presystemsetup = @systemsetup.each.map { |config| [config['method'], '-' + config['key'], config['keyvalue']].join(' ') }
+  end
+
+  def config
+    @predefaults.each { |command| system command }
+    @presystemsetup.each { |command| system command }
+  end
+
+  def main
+    dbconnect 
+    preconfig
+    config
+  end
+end
+
 MacosFirstInstall.new.main
+MacOSConfig.main

@@ -1,3 +1,15 @@
+#### TODO
+## gem support
+# rubocop 
+## ruby version
+# config
+## software config
+# keepassx
+# iTerm2
+# vim/nvim
+# tmux
+# zsh
+# .... dotfiles 
 CREATE TABLE IF NOT EXISTS software (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT VARCHAR(255) NOT NULL,
@@ -72,6 +84,7 @@ INSERT INTO software(name, category, method) VALUES ('font-raleway', 'font', 'ca
 INSERT INTO software(name, category, method) VALUES ('adobe-creative-cloud', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('bartender', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('bash', 'core', 'core');
+INSERT INTO software(name, category, method) VALUES ('netcat', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('bash-completion', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('gpg', 'crypt', 'core');
 INSERT INTO software(name, category, method) VALUES ('zsh', 'core', 'core');
@@ -95,6 +108,7 @@ INSERT INTO software(name, category, method) VALUES ('neovim', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('macvim', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('nextcloud', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('nmap', 'security', 'core');
+INSERT INTO software(name, category, method) VALUES ('whireshark', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('hping', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('node', 'programming', 'core');
 INSERT INTO software(name, category, method) VALUES ('omnifocus', 'office', 'cask');
@@ -109,6 +123,7 @@ INSERT INTO software(name, category, method) VALUES ('skype-for-business', 'comm
 INSERT INTO software(name, category, method) VALUES ('slack', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('vagrant', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('chefdk', 'dev', 'cask');
+INSERT INTO software(name, category, method) VALUES ('rubocop', 'dev', 'gem');
 INSERT INTO software(name, category, method) VALUES ('testssl', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('virtualbox', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('vmware-fusion', 'dev', 'cask');
