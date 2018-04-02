@@ -39,7 +39,6 @@ class MacosFirstInstall
   def main
     dbconnect
     preinstall
-    brewinstall
     install
     cleanup
   end

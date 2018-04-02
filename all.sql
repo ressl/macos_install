@@ -1,15 +1,3 @@
-#### TODO
-## gem support
-# rubocop 
-## ruby version
-# config
-## software config
-# keepassx
-# iTerm2
-# vim/nvim
-# tmux
-# zsh
-# .... dotfiles 
 CREATE TABLE IF NOT EXISTS software (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT VARCHAR(255) NOT NULL,
@@ -58,6 +46,7 @@ INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.LaunchServices', 'LSQuarantine', 'bool', 'false', 'Disable the “Are you sure you want to open this application?” dialog.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'KeyRepeat', 'int', '1', 'The keyboard react faster to keystrokes.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'InitialKeyRepeat', 'int', '10', 'The keyboard react faster to keystrokes.');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'ApplePressAndHoldEnabled', 'bool', 'true', 'Set Press and hold to enable for special character');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.SoftwareUpdate', 'AutomaticDownload', 'bool', 'false', 'Disable autoamtic download from updates.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.SoftwareUpdate', 'AutomaticDownload', 'bool', 'false', 'Disable autoamtic download from updates.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.driver.AppleBluetoothMultitouch.trackpad', 'Clicking', 'bool', 'true', 'Trackpad: enable tap to click for this user and for the login screen.');
@@ -84,10 +73,12 @@ INSERT INTO software(name, category, method) VALUES ('font-raleway', 'font', 'ca
 INSERT INTO software(name, category, method) VALUES ('adobe-creative-cloud', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('bartender', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('bash', 'core', 'core');
+INSERT INTO software(name, category, method) VALUES ('shellcheck', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('netcat', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('bash-completion', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('gpg', 'crypt', 'core');
 INSERT INTO software(name, category, method) VALUES ('zsh', 'core', 'core');
+INSERT INTO software(name, category, method) VALUES ('controlplane', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('cheatsheet', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('cleanmymac', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('coreutils', 'core', 'core');
@@ -122,9 +113,11 @@ INSERT INTO software(name, category, method) VALUES ('skype', 'communication', '
 INSERT INTO software(name, category, method) VALUES ('skype-for-business', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('slack', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('vagrant', 'dev', 'cask');
+INSERT INTO software(name, category, method) VALUES ('docker', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('chefdk', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('rubocop', 'dev', 'gem');
 INSERT INTO software(name, category, method) VALUES ('testssl', 'security', 'core');
+INSERT INTO software(name, category, method) VALUES ('wireshark', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('virtualbox', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('vmware-fusion', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('snagit', 'support', 'cask');
@@ -139,9 +132,14 @@ INSERT INTO software(name, category, method) VALUES ('unrar', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('vlc', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('wget', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('whatsapp', 'communication', 'cask');
+INSERT INTO software(name, category, method) VALUES ('gpg-suite', 'communication', 'cask');
+INSERT INTO software(name, category, method) VALUES ('microsoft-teams', 'communication', 'cask');
+INSERT INTO software(name, category, method) VALUES ('citrix-receiver', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('youtube-dl', 'multimedia', 'core');
 INSERT INTO software(name, category, method, info) VALUES ('1090488118', 'core', 'mas', 'gemini 2');
 INSERT INTO software(name, category, method, info) VALUES ('405399194', 'core', 'mas', 'kindle');
+INSERT INTO software(name, category, method, info) VALUES ('1063996724', 'core', 'mas', 'Tyme 2');
+INSERT INTO software(name, category, method, info) VALUES ('494803304', 'core', 'mas', 'WiFi Explorer');
 INSERT INTO software(name, category, method, info) VALUES ('409183694', 'office', 'mas', 'keynote');
 INSERT INTO software(name, category, method, info) VALUES ('409201541', 'office', 'mas', 'pages');
 INSERT INTO software(name, category, method, info) VALUES ('409203825', 'office', 'mas', 'numbers');
