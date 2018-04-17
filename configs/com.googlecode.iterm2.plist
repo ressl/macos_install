@@ -1,0 +1,993 @@
+{
+    AboutToPasteTabsWithCancel = 1;
+    "AboutToPasteTabsWithCancel_selection" = 2;
+    AppleAntiAliasingThreshold = 1;
+    AppleScrollAnimationEnabled = 0;
+    AppleSmoothFixedFontsSizeThreshold = 1;
+    AppleWindowTabbingMode = manual;
+    "Custom Color Presets" =     {
+        Homebrew =         {
+            "Ansi 0 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 1 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = "0.6";
+            };
+            "Ansi 10 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.8509803921568627";
+                "Red Component" = 0;
+            };
+            "Ansi 11 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.8980392156862745";
+                "Red Component" = "0.8980392156862745";
+            };
+            "Ansi 12 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 13 Color" =             {
+                "Blue Component" = "0.8980392156862745";
+                "Green Component" = 0;
+                "Red Component" = "0.8980392156862745";
+            };
+            "Ansi 14 Color" =             {
+                "Blue Component" = "0.8980392156862745";
+                "Green Component" = "0.8980392156862745";
+                "Red Component" = 0;
+            };
+            "Ansi 15 Color" =             {
+                "Blue Component" = "0.8980392156862745";
+                "Green Component" = "0.8980392156862745";
+                "Red Component" = "0.8980392156862745";
+            };
+            "Ansi 2 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.6509803921568628";
+                "Red Component" = 0;
+            };
+            "Ansi 3 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.6";
+                "Red Component" = "0.6";
+            };
+            "Ansi 4 Color" =             {
+                "Blue Component" = "0.6980392156862745";
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 5 Color" =             {
+                "Blue Component" = "0.6980392156862745";
+                "Green Component" = 0;
+                "Red Component" = "0.6980392156862745";
+            };
+            "Ansi 6 Color" =             {
+                "Blue Component" = "0.6980392156862745";
+                "Green Component" = "0.6509803921568628";
+                "Red Component" = 0;
+            };
+            "Ansi 7 Color" =             {
+                "Blue Component" = "0.7490196078431373";
+                "Green Component" = "0.7490196078431373";
+                "Red Component" = "0.7490196078431373";
+            };
+            "Ansi 8 Color" =             {
+                "Blue Component" = "0.4";
+                "Green Component" = "0.4";
+                "Red Component" = "0.4";
+            };
+            "Ansi 9 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = "0.8980392156862745";
+            };
+            "Background Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Bold Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 1;
+                "Red Component" = 0;
+            };
+            "Cursor Color" =             {
+                "Blue Component" = "0.09411764705882353";
+                "Green Component" = 1;
+                "Red Component" = "0.1372549019607843";
+            };
+            "Cursor Text Color" =             {
+                "Blue Component" = "0.0940093994140625";
+                "Green Component" = 0;
+                "Red Component" = 1;
+            };
+            "Foreground Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 1;
+                "Red Component" = 0;
+            };
+            "Selected Text Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Selection Color" =             {
+                "Blue Component" = "0.0196078431372549";
+                "Green Component" = "0.2235294117647059";
+                "Red Component" = "0.03137254901960784";
+            };
+        };
+    };
+    "Default Bookmark Guid" = "1BBBA716-1E72-4E9B-AB3E-B51686604CD1";
+    DimInactiveSplitPanes = 0;
+    DimOnlyText = 0;
+    GlobalKeyMap =     {
+        "0x19-0x60000" =         {
+            Action = 39;
+            Text = "";
+        };
+        "0x9-0x40000" =         {
+            Action = 32;
+            Text = "";
+        };
+        "0xf700-0x200000" =         {
+            Action = 13;
+            Text = "";
+        };
+        "0xf700-0x300000" =         {
+            Action = 7;
+            Text = "";
+        };
+        "0xf701-0x200000" =         {
+            Action = 13;
+            Text = "";
+        };
+        "0xf701-0x300000" =         {
+            Action = 6;
+            Text = "";
+        };
+        "0xf702-0x200000" =         {
+            Action = 13;
+            Text = "";
+        };
+        "0xf702-0x300000" =         {
+            Action = 2;
+            Text = "";
+        };
+        "0xf702-0x320000" =         {
+            Action = 33;
+            Text = "";
+        };
+        "0xf703-0x200000" =         {
+            Action = 13;
+            Text = "";
+        };
+        "0xf703-0x300000" =         {
+            Action = 0;
+            Text = "";
+        };
+        "0xf703-0x320000" =         {
+            Action = 34;
+            Text = "";
+        };
+        "0xf729-0x100000" =         {
+            Action = 5;
+            Text = "";
+        };
+        "0xf72b-0x100000" =         {
+            Action = 4;
+            Text = "";
+        };
+        "0xf72c-0x100000" =         {
+            Action = 9;
+            Text = "";
+        };
+        "0xf72c-0x20000" =         {
+            Action = 9;
+            Text = "";
+        };
+        "0xf72d-0x100000" =         {
+            Action = 8;
+            Text = "";
+        };
+        "0xf72d-0x20000" =         {
+            Action = 8;
+            Text = "";
+        };
+    };
+    HotkeyMigratedFromSingleToMulti = 1;
+    NSNavLastRootDirectory = "~/Downloads/iTerm2-Color-Schemes-master/schemes";
+    NSNavPanelExpandedSizeForOpenMode = "{712, 448}";
+    NSQuotedKeystrokeBinding = "";
+    NSRepeatCountBinding = "";
+    NSScrollAnimationEnabled = 0;
+    NSScrollViewShouldScrollUnderTitlebar = 0;
+    "NSTableView Columns v2 KeyBingingTable" = <62706c69 73743030 d4010203 04050636 37582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0ae 07080f1a 1b1c1d1e 1f202630 31325524 6e756c6c d2090a0b 0e5a4e53 2e6f626a 65637473 5624636c 617373a2 0c0d8002 800a800d d310090a 11151957 4e532e6b 657973a3 12131480 03800480 05a31617 18800680 07800880 095a4964 656e7469 66696572 55576964 74685648 69646465 6e513023 4068c000 00000000 08d22122 23245a24 636c6173 736e616d 65582463 6c617373 65735c4e 53446963 74696f6e 617279a2 2325584e 534f626a 656374d3 10090a27 2b19a312 13148003 80048005 a32c2d18 800b800c 80088009 51312340 74a19db2 2d0e56d2 21223334 5e4e534d 75746162 6c654172 726179a3 33352557 4e534172 7261795f 100f4e53 4b657965 64417263 68697665 72d13839 55417272 61798001 00080011 001a0023 002d0032 00370046 004c0051 005c0063 00660068 006a006c 0073007b 007f0081 00830085 0089008b 008d008f 0091009c 00a200a9 00ab00b4 00b500ba 00c500ce 00db00de 00e700ee 00f200f4 00f600f8 00fc00fe 01000102 01040106 010f0114 01230127 012f0141 0144014a 00000000 00000201 00000000 0000003a 00000000 00000000 00000000 0000014c>;
+    "NSTableView Sort Ordering v2 KeyBingingTable" = <62706c69 73743030 d4010203 04050614 15582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0a3 07080d55 246e756c 6cd2090a 0b0c5a4e 532e6f62 6a656374 73562463 6c617373 a08002d2 0e0f1011 5a24636c 6173736e 616d6558 24636c61 73736573 5e4e534d 75746162 6c654172 726179a3 10121357 4e534172 72617958 4e534f62 6a656374 5f100f4e 534b6579 65644172 63686976 6572d116 17554172 72617980 0108111a 232d3237 3b414651 58595b60 6b748387 8f98aaad b3000000 00000001 01000000 00000000 18000000 00000000 00000000 00000000 b5>;
+    "NSTableView Supports v2 KeyBingingTable" = 1;
+    "NSWindow Frame SessionsPreferences" = "269 126 606 469 0 0 1440 877 ";
+    "NSWindow Frame SharedPreferences" = "403 378 1018 447 0 0 1680 1027 ";
+    "NSWindow Frame iTerm Window 0" = "0 0 1680 1027 0 0 1680 1027 ";
+    "NSWindow Frame iTerm Window 1" = "196 0 1200 1027 0 0 1680 1027 ";
+    "NSWindow Frame iTerm Window 2" = "0 71 1440 806 0 0 1440 877 ";
+    "NeverWarnAboutShortLivedSessions_1BBBA716-1E72-4E9B-AB3E-B51686604CD1" = 1;
+    "NeverWarnAboutShortLivedSessions_1BBBA716-1E72-4E9B-AB3E-B51686604CD1_selection" = 0;
+    "New Bookmarks" =     (
+                {
+            "ASCII Anti Aliased" = 1;
+            "Ambiguous Double Width" = 0;
+            "Ansi 0 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 1 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = "0.6";
+            };
+            "Ansi 10 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.8509803921568627";
+                "Red Component" = 0;
+            };
+            "Ansi 11 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.8980392156862745";
+                "Red Component" = "0.8980392156862745";
+            };
+            "Ansi 12 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 13 Color" =             {
+                "Blue Component" = "0.8980392156862745";
+                "Green Component" = 0;
+                "Red Component" = "0.8980392156862745";
+            };
+            "Ansi 14 Color" =             {
+                "Blue Component" = "0.8980392156862745";
+                "Green Component" = "0.8980392156862745";
+                "Red Component" = 0;
+            };
+            "Ansi 15 Color" =             {
+                "Blue Component" = "0.8980392156862745";
+                "Green Component" = "0.8980392156862745";
+                "Red Component" = "0.8980392156862745";
+            };
+            "Ansi 2 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.6509803921568628";
+                "Red Component" = 0;
+            };
+            "Ansi 3 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.6";
+                "Red Component" = "0.6";
+            };
+            "Ansi 4 Color" =             {
+                "Blue Component" = "0.6980392156862745";
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 5 Color" =             {
+                "Blue Component" = "0.6980392156862745";
+                "Green Component" = 0;
+                "Red Component" = "0.6980392156862745";
+            };
+            "Ansi 6 Color" =             {
+                "Blue Component" = "0.6980392156862745";
+                "Green Component" = "0.6509803921568628";
+                "Red Component" = 0;
+            };
+            "Ansi 7 Color" =             {
+                "Blue Component" = "0.7490196078431373";
+                "Green Component" = "0.7490196078431373";
+                "Red Component" = "0.7490196078431373";
+            };
+            "Ansi 8 Color" =             {
+                "Blue Component" = "0.4";
+                "Green Component" = "0.4";
+                "Red Component" = "0.4";
+            };
+            "Ansi 9 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = "0.8980392156862745";
+            };
+            "BM Growl" = 1;
+            "Background Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Background Image Location" = "";
+            "Badge Color" =             {
+                "Alpha Component" = "0.5";
+                "Blue Component" = 0;
+                "Color Space" = sRGB;
+                "Green Component" = "0.1491314172744751";
+                "Red Component" = 1;
+            };
+            Blend = "0.4564190204326923";
+            "Blinking Cursor" = 0;
+            Blur = 0;
+            "Bold Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 1;
+                "Red Component" = 0;
+            };
+            "Character Encoding" = 4;
+            "Close Sessions On End" = 1;
+            Columns = 80;
+            Command = "";
+            "Cursor Color" =             {
+                "Blue Component" = "0.09411764705882353";
+                "Green Component" = 1;
+                "Red Component" = "0.1372549019607843";
+            };
+            "Cursor Guide Color" =             {
+                "Alpha Component" = "0.25";
+                "Blue Component" = 1;
+                "Color Space" = sRGB;
+                "Green Component" = "0.9268307089805603";
+                "Red Component" = "0.7021318674087524";
+            };
+            "Cursor Text Color" =             {
+                "Blue Component" = "0.0940093994140625";
+                "Green Component" = 0;
+                "Red Component" = 1;
+            };
+            "Custom Command" = No;
+            "Custom Directory" = No;
+            "Default Bookmark" = No;
+            Description = Default;
+            "Disable Window Resizing" = 1;
+            "Flashing Bell" = 0;
+            "Foreground Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 1;
+                "Red Component" = 0;
+            };
+            Guid = "1BBBA716-1E72-4E9B-AB3E-B51686604CD1";
+            "Hide After Opening" = 0;
+            "Horizontal Spacing" = 1;
+            "Idle Code" = 0;
+            "Jobs to Ignore" =             (
+                rlogin,
+                ssh,
+                slogin,
+                telnet
+            );
+            "Keyboard Map" =             {
+                "0x2d-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x32-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x00;
+                };
+                "0x33-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1b;
+                };
+                "0x34-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1c;
+                };
+                "0x35-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1d;
+                };
+                "0x36-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1e;
+                };
+                "0x37-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x38-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x7f;
+                };
+                "0xf700-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2A";
+                };
+                "0xf700-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5A";
+                };
+                "0xf700-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6A";
+                };
+                "0xf700-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x41";
+                };
+                "0xf701-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2B";
+                };
+                "0xf701-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5B";
+                };
+                "0xf701-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6B";
+                };
+                "0xf701-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x42";
+                };
+                "0xf702-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2D";
+                };
+                "0xf702-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5D";
+                };
+                "0xf702-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6D";
+                };
+                "0xf702-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x44";
+                };
+                "0xf703-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2C";
+                };
+                "0xf703-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5C";
+                };
+                "0xf703-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6C";
+                };
+                "0xf703-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x43";
+                };
+                "0xf704-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2P";
+                };
+                "0xf705-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2Q";
+                };
+                "0xf706-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2R";
+                };
+                "0xf707-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2S";
+                };
+                "0xf708-0x20000" =                 {
+                    Action = 10;
+                    Text = "[15;2~";
+                };
+                "0xf709-0x20000" =                 {
+                    Action = 10;
+                    Text = "[17;2~";
+                };
+                "0xf70a-0x20000" =                 {
+                    Action = 10;
+                    Text = "[18;2~";
+                };
+                "0xf70b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[19;2~";
+                };
+                "0xf70c-0x20000" =                 {
+                    Action = 10;
+                    Text = "[20;2~";
+                };
+                "0xf70d-0x20000" =                 {
+                    Action = 10;
+                    Text = "[21;2~";
+                };
+                "0xf70e-0x20000" =                 {
+                    Action = 10;
+                    Text = "[23;2~";
+                };
+                "0xf70f-0x20000" =                 {
+                    Action = 10;
+                    Text = "[24;2~";
+                };
+                "0xf729-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2H";
+                };
+                "0xf729-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5H";
+                };
+                "0xf72b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2F";
+                };
+                "0xf72b-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5F";
+                };
+            };
+            "Link Color" =             {
+                "Alpha Component" = 1;
+                "Blue Component" = "0.734233021736145";
+                "Color Space" = sRGB;
+                "Green Component" = "0.3591606020927429";
+                "Red Component" = 0;
+            };
+            "Mouse Reporting" = 1;
+            Name = Default;
+            "Non Ascii Font" = "Monaco 12";
+            "Non-ASCII Anti Aliased" = 1;
+            "Normal Font" = "Monaco 12";
+            "Option Key Sends" = 0;
+            "Prompt Before Closing 2" = 0;
+            "Right Option Key Sends" = 0;
+            Rows = 25;
+            Screen = "-1";
+            "Scrollback Lines" = 1000;
+            "Selected Text Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Selection Color" =             {
+                "Blue Component" = "0.0196078431372549";
+                "Green Component" = "0.2235294117647059";
+                "Red Component" = "0.03137254901960784";
+            };
+            "Send Code When Idle" = 0;
+            Shortcut = "";
+            "Silence Bell" = 0;
+            "Sync Title" = 0;
+            Tags =             (
+            );
+            "Terminal Type" = "xterm-256color";
+            Transparency = 0;
+            "Unlimited Scrollback" = 1;
+            "Use Bold Font" = 1;
+            "Use Bright Bold" = 1;
+            "Use Italic Font" = 1;
+            "Use Non-ASCII Font" = 0;
+            "Vertical Spacing" = 1;
+            "Visual Bell" = 1;
+            "Window Type" = 0;
+            "Working Directory" = "/Users/rressl";
+        },
+                {
+            "ASCII Anti Aliased" = 1;
+            "Ambiguous Double Width" = 0;
+            "Ansi 0 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 1 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = "0.6";
+            };
+            "Ansi 10 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.8509803921568627";
+                "Red Component" = 0;
+            };
+            "Ansi 11 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.8980392156862745";
+                "Red Component" = "0.8980392156862745";
+            };
+            "Ansi 12 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 13 Color" =             {
+                "Blue Component" = "0.8980392156862745";
+                "Green Component" = 0;
+                "Red Component" = "0.8980392156862745";
+            };
+            "Ansi 14 Color" =             {
+                "Blue Component" = "0.8980392156862745";
+                "Green Component" = "0.8980392156862745";
+                "Red Component" = 0;
+            };
+            "Ansi 15 Color" =             {
+                "Blue Component" = "0.8980392156862745";
+                "Green Component" = "0.8980392156862745";
+                "Red Component" = "0.8980392156862745";
+            };
+            "Ansi 2 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.6509803921568628";
+                "Red Component" = 0;
+            };
+            "Ansi 3 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.6";
+                "Red Component" = "0.6";
+            };
+            "Ansi 4 Color" =             {
+                "Blue Component" = "0.6980392156862745";
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 5 Color" =             {
+                "Blue Component" = "0.6980392156862745";
+                "Green Component" = 0;
+                "Red Component" = "0.6980392156862745";
+            };
+            "Ansi 6 Color" =             {
+                "Blue Component" = "0.6980392156862745";
+                "Green Component" = "0.6509803921568628";
+                "Red Component" = 0;
+            };
+            "Ansi 7 Color" =             {
+                "Blue Component" = "0.7490196078431373";
+                "Green Component" = "0.7490196078431373";
+                "Red Component" = "0.7490196078431373";
+            };
+            "Ansi 8 Color" =             {
+                "Blue Component" = "0.4";
+                "Green Component" = "0.4";
+                "Red Component" = "0.4";
+            };
+            "Ansi 9 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = "0.8980392156862745";
+            };
+            "BM Growl" = 1;
+            "Background Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Background Image Location" = "";
+            "Badge Color" =             {
+                "Alpha Component" = "0.5";
+                "Blue Component" = 0;
+                "Color Space" = sRGB;
+                "Green Component" = "0.1491314172744751";
+                "Red Component" = 1;
+            };
+            Blend = "0.4564190204326923";
+            "Blinking Cursor" = 0;
+            Blur = 0;
+            "Bold Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 1;
+                "Red Component" = 0;
+            };
+            "Bound Hosts" =             (
+            );
+            "Character Encoding" = 4;
+            "Close Sessions On End" = 1;
+            Columns = 80;
+            Command = "";
+            "Cursor Color" =             {
+                "Blue Component" = "0.09411764705882353";
+                "Green Component" = 1;
+                "Red Component" = "0.1372549019607843";
+            };
+            "Cursor Guide Color" =             {
+                "Alpha Component" = "0.25";
+                "Blue Component" = 1;
+                "Color Space" = sRGB;
+                "Green Component" = "0.9268307089805603";
+                "Red Component" = "0.7021318674087524";
+            };
+            "Cursor Text Color" =             {
+                "Blue Component" = "0.0940093994140625";
+                "Green Component" = 0;
+                "Red Component" = 1;
+            };
+            "Custom Command" = No;
+            "Custom Directory" = No;
+            "Default Bookmark" = No;
+            Description = Default;
+            "Disable Window Resizing" = 1;
+            "Flashing Bell" = 0;
+            "Foreground Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 1;
+                "Red Component" = 0;
+            };
+            Guid = "316CE558-6EE6-4B09-A3D7-613DC48F6083";
+            "Hide After Opening" = 0;
+            "Horizontal Spacing" = 1;
+            "Idle Code" = 0;
+            "Jobs to Ignore" =             (
+                rlogin,
+                ssh,
+                slogin,
+                telnet
+            );
+            "Keyboard Map" =             {
+                "0x2d-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x32-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x00;
+                };
+                "0x33-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1b;
+                };
+                "0x34-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1c;
+                };
+                "0x35-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1d;
+                };
+                "0x36-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1e;
+                };
+                "0x37-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x38-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x7f;
+                };
+                "0xf700-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2A";
+                };
+                "0xf700-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5A";
+                };
+                "0xf700-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6A";
+                };
+                "0xf700-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x41";
+                };
+                "0xf701-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2B";
+                };
+                "0xf701-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5B";
+                };
+                "0xf701-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6B";
+                };
+                "0xf701-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x42";
+                };
+                "0xf702-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2D";
+                };
+                "0xf702-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5D";
+                };
+                "0xf702-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6D";
+                };
+                "0xf702-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x44";
+                };
+                "0xf703-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2C";
+                };
+                "0xf703-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5C";
+                };
+                "0xf703-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6C";
+                };
+                "0xf703-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x43";
+                };
+                "0xf704-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2P";
+                };
+                "0xf705-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2Q";
+                };
+                "0xf706-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2R";
+                };
+                "0xf707-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2S";
+                };
+                "0xf708-0x20000" =                 {
+                    Action = 10;
+                    Text = "[15;2~";
+                };
+                "0xf709-0x20000" =                 {
+                    Action = 10;
+                    Text = "[17;2~";
+                };
+                "0xf70a-0x20000" =                 {
+                    Action = 10;
+                    Text = "[18;2~";
+                };
+                "0xf70b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[19;2~";
+                };
+                "0xf70c-0x20000" =                 {
+                    Action = 10;
+                    Text = "[20;2~";
+                };
+                "0xf70d-0x20000" =                 {
+                    Action = 10;
+                    Text = "[21;2~";
+                };
+                "0xf70e-0x20000" =                 {
+                    Action = 10;
+                    Text = "[23;2~";
+                };
+                "0xf70f-0x20000" =                 {
+                    Action = 10;
+                    Text = "[24;2~";
+                };
+                "0xf729-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2H";
+                };
+                "0xf729-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5H";
+                };
+                "0xf72b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2F";
+                };
+                "0xf72b-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5F";
+                };
+            };
+            "Link Color" =             {
+                "Alpha Component" = 1;
+                "Blue Component" = "0.734233021736145";
+                "Color Space" = sRGB;
+                "Green Component" = "0.3591606020927429";
+                "Red Component" = 0;
+            };
+            "Mouse Reporting" = 1;
+            Name = Training;
+            "Non Ascii Font" = "Monaco 12";
+            "Non-ASCII Anti Aliased" = 1;
+            "Normal Font" = "Monaco 30";
+            "Option Key Sends" = 0;
+            "Prompt Before Closing 2" = 0;
+            "Right Option Key Sends" = 0;
+            Rows = 25;
+            Screen = "-1";
+            "Scrollback Lines" = 1000;
+            "Selected Text Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Selection Color" =             {
+                "Blue Component" = "0.0196078431372549";
+                "Green Component" = "0.2235294117647059";
+                "Red Component" = "0.03137254901960784";
+            };
+            "Send Code When Idle" = 0;
+            Shortcut = "";
+            "Silence Bell" = 0;
+            "Sync Title" = 0;
+            Tags =             (
+            );
+            "Terminal Type" = "xterm-256color";
+            Transparency = 0;
+            "Unlimited Scrollback" = 1;
+            "Use Bold Font" = 1;
+            "Use Bright Bold" = 1;
+            "Use Italic Font" = 1;
+            "Use Non-ASCII Font" = 0;
+            "Vertical Spacing" = 1;
+            "Visual Bell" = 1;
+            "Window Type" = 0;
+            "Working Directory" = "/Users/rressl";
+        }
+    );
+    NoSyncCommandHistoryHasEverBeenUsed = 1;
+    NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt = 1;
+    "NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection" = 1;
+    NoSyncHaveUsedCopyMode = 1;
+    NoSyncHaveWarnedAboutPasteConfirmationChange = 1;
+    NoSyncInstallationId = "D6156408-AA97-41B5-852E-73470062DDC7";
+    NoSyncLastTipTime = "537054232.400252";
+    NoSyncPermissionToShowTip = 1;
+    NoSyncTimeOfFirstLaunchOfVersionWithTip = "534458216.921712";
+    NoSyncTipsDisabled = 1;
+    NoSyncTipsToNotShow =     (
+        000,
+        0000,
+        0001,
+        0002,
+        0003,
+        0004,
+        0005,
+        0006,
+        0007,
+        0008,
+        0009,
+        0010,
+        0011,
+        0012
+    );
+    PasteTabToStringTabStopSize = 2;
+    PointerActions =     {
+        "Button,1,1,," =         {
+            Action = kContextMenuPointerAction;
+        };
+        "Button,2,1,," =         {
+            Action = kPasteFromClipboardPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeDown,," =         {
+            Action = kPrevWindowPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeLeft,," =         {
+            Action = kPrevTabPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeRight,," =         {
+            Action = kNextTabPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeUp,," =         {
+            Action = kNextWindowPointerAction;
+        };
+    };
+    SUEnableAutomaticChecks = 1;
+    SUFeedAlternateAppNameKey = iTerm;
+    SUFeedURL = "https://iterm2.com/appcasts/final.xml?shard=32";
+    SUHasLaunchedBefore = 1;
+    SULastCheckTime = "2018-04-17 17:58:30 +0000";
+    SUSendProfileInfo = 0;
+    SavePasteHistory = 1;
+    ShowFullScreenTabBar = 0;
+    SplitPaneDimmingAmount = "0.2913686899038461";
+    "findMode_iTerm" = 0;
+    "iTerm Version" = "3.1.5";
+}
