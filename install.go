@@ -24,8 +24,7 @@ func main() {
 	fmt.Println(install(q))
 }
 
-func install(method_name *sql.Rows) string {
-	out := ""
+func install(method_name *sql.Rows) bool {
 	for method_name.Next() {
 		var name string
 		var category string
@@ -35,7 +34,6 @@ func install(method_name *sql.Rows) string {
 			log.Fatal(err)
 		}
 		fmt.Printf("Install package %s, from category %s, with %s\n", name, category, method)
-		out += fmt.Sprintf("Install package %s, from category %s, with %s\n", name, category, method)
 		cmd := exec.Command("brew", "install", name)
 		stderr, err := cmd.StderrPipe()
 		if err != nil {
@@ -58,5 +56,5 @@ func install(method_name *sql.Rows) string {
 			log.Fatalf("Failed to install %s: %s", name, err)
 		}
 	}
-	return out
+	return true
 }
