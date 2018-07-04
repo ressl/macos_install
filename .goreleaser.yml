@@ -1,0 +1,6 @@
+builds:
+  - binary: macos_install
+    goos:
+      - darwin
+    goarch:
+      - amd64
