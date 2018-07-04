@@ -99,7 +99,7 @@ INSERT INTO software(name, category, method) VALUES ('neovim', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('macvim', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('nextcloud', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('nmap', 'security', 'core');
-INSERT INTO software(name, category, method) VALUES ('whireshark', 'security', 'core');
+INSERT INTO software(name, category, method) VALUES ('wireshark', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('hping', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('node', 'programming', 'core');
 INSERT INTO software(name, category, method) VALUES ('omnifocus', 'office', 'cask');
