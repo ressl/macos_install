@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os/exec"
+	"strings"
 )
 
 func main() {
@@ -25,6 +26,14 @@ func main() {
 }
 
 func install(method_name *sql.Rows) bool {
+	installs := map[string][]string{
+		"tap":  {"brew", "tap"},
+		"core": {"brew", "install"},
+		"cask": {"brew", "cask", "install"},
+		"mas":  {"mas", "install"},
+		"gem":  {"gem", "install"},
+	}
+
 	for method_name.Next() {
 		var name string
 		var category string
@@ -34,7 +43,17 @@ func install(method_name *sql.Rows) bool {
 			log.Fatal(err)
 		}
 		fmt.Printf("Install package %s, from category %s, with %s\n", name, category, method)
-		cmd := exec.Command("brew", "install", name)
+		args := []string{}
+		cmds := ""
+		for methods, install := range installs {
+			if strings.Contains(methods, method) {
+				cmds = strings.Join(install[:1], "")
+				args = append(install[1:], []string{name}...)
+				fmt.Println(cmds, strings.Join(args, " "))
+			}
+		}
+
+		cmd := exec.Command(cmds, args...)
 		stderr, err := cmd.StderrPipe()
 		if err != nil {
 			log.Fatalf("Failed to install %s: %s", name, err)
