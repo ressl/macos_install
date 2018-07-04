@@ -1,6 +1,7 @@
 # macos_install
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ea0525f63d0b4421b8f96d79cb018fbf)](https://app.codacy.com/app/r.ressl/macos_install?utm_source=github.com&utm_medium=referral&utm_content=safematix/macos_install&utm_campaign=badger)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ea0525f63d0b4421b8f96d79cb018fbf)](https://app.codacy.com/app/r.ressl/macos_install?utm_source=github.com&utm_medium=referral&utm_content=safematix/macos_install&utm_campaign=badger)
 
 Scripts for customized macOS machine setup and configuration.
 
