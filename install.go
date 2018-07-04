@@ -17,7 +17,7 @@ func main() {
 	}
 	defer db.Close()
 
-	q, err := db.Query("select name, category, method from software")
+	q, err := db.Query("select distinct name, category, method from software")
 	if err != nil {
 		log.Fatalf("Failed to read data from database: %s", err)
 	}
