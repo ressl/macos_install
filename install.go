@@ -25,7 +25,7 @@ func main() {
 	fmt.Println(install(q))
 }
 
-func install(method_name *sql.Rows) bool {
+func install(methodname *sql.Rows) bool {
 	installs := map[string][]string{
 		"tap":  {"brew", "tap"},
 		"core": {"brew", "install"},
@@ -34,11 +34,11 @@ func install(method_name *sql.Rows) bool {
 		"gem":  {"gem", "install"},
 	}
 
-	for method_name.Next() {
+	for methodname.Next() {
 		var name string
 		var category string
 		var method string
-		err := method_name.Scan(&name, &category, &method)
+		err := methodname.Scan(&name, &category, &method)
 		if err != nil {
 			log.Fatal(err)
 		}
