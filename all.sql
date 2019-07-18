@@ -71,6 +71,7 @@ INSERT INTO software(name, category, method) VALUES ('font-dejavu-sans', 'font',
 INSERT INTO software(name, category, method) VALUES ('font-monoid', 'font', 'cask');
 INSERT INTO software(name, category, method) VALUES ('font-raleway', 'font', 'cask');
 INSERT INTO software(name, category, method) VALUES ('adobe-creative-cloud', 'multimedia', 'cask');
+INSERT INTO software(name, category, method) VALUES ('capture-one', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('bartender', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('bash', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('shellcheck', 'core', 'core');
@@ -82,7 +83,6 @@ INSERT INTO software(name, category, method) VALUES ('controlplane', 'core', 'ca
 INSERT INTO software(name, category, method) VALUES ('cheatsheet', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('cleanmymac', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('coreutils', 'core', 'core');
-INSERT INTO software(name, category, method) VALUES ('dnscrypt', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('firefox', 'browser', 'cask');
 INSERT INTO software(name, category, method) VALUES ('go', 'programming', 'core');
 INSERT INTO software(name, category, method) VALUES ('google-chrome', 'browser', 'cask');
@@ -112,9 +112,10 @@ INSERT INTO software(name, category, method) VALUES ('sizeup', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('skype', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('skype-for-business', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('slack', 'communication', 'cask');
+INSERT INTO software(name, category, method) VALUES ('mattermost', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('vagrant', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('docker', 'dev', 'cask');
-INSERT INTO software(name, category, method) VALUES ('chefdk', 'dev', 'cask');
+INSERT INTO software(name, category, method) VALUES ('chef-workstation', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('rubocop', 'dev', 'gem');
 INSERT INTO software(name, category, method) VALUES ('testssl', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('wireshark', 'security', 'core');
